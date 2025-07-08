@@ -10,7 +10,7 @@ interface Actions {
 
 type State = InitialState & Actions;
 
-export const useLocationStore = create<State>()((set, get) => ({
+export const useLocationStore = create<State>()((set) => ({
   location: [],
   setLocation: (location: number[]) => set({ location }),
 }));
